@@ -20,7 +20,7 @@
 
 defined a class named Time and you wrote a function named printTime, which should have looked something like this:
 
-'''
+```
 class Time: 
   pass 
 
@@ -28,7 +28,7 @@ def printTime(time):
   print str(time.hours) + ":" + \ 
         str(time.minutes) + ":" + \ 
         str(time.seconds) 
-'''
+```
 
 To call this function, we passed a Time object as an argument:
 
@@ -40,13 +40,13 @@ To call this function, we passed a Time object as an argument:
 
 To make printTime a method, all we have to do is move the function definition inside the class definition. Notice the change in indentation.
 
-'''
+```
 class Time: 
   def printTime(time): 
     print str(time.hours) + ":" +  \ 
           str(time.minutes) + ":" +  \ 
           str(time.seconds) 
-'''
+```
 
 Now we can invoke printTime using dot notation.
 
