@@ -21,8 +21,9 @@ class Dog:
 
 rufus = Dog()
 rufus.bark()
-```
+
 rufus is an Object and bark is a Method, both within the Class "Dog". Such a method would not work on a "Cat" Class.
+```
 
 
 #### The syntax for invoking a Method is different from the syntax for calling a Function.
@@ -38,18 +39,16 @@ rufus is an Object and bark is a Method, both within the Class "Dog". Such a met
 Bonus: Parameters appear in definitions; arguments appear in calls.
 
 
-
 ##### The syntax for a Function call: print(my_string), suggests that the Function is the active agent. It says something like, "Hey print! Here's an object for you to print."
 
 
 ##### In OOP, the Objects are the active agents. ~~An invocation like console.log() says "Hey console! Please log yourself!"~~
-An invocation like my_string.upper() says "Hey my_string! Please uppercase yourself!"
+##### An invocation like my_string.upper() says "Hey my_string! Please uppercase yourself!"
 
 
 ##### This change in perspective might be more polite, but it is not obvious that it is useful. In the examples we have seen so far, it may not be. But sometimes shifting responsibility from the functions onto the objects makes it possible to write more versatile functions, and makes it easier to maintain and reuse code*.
 
-
-Write DRY code: Don't Repeat Yourself. A principle of software development aimed at reducing repetition of information of all kinds.
+*Write DRY code: Don't Repeat Yourself. A principle of software development aimed at reducing repetition of information of all kinds.
 
 
 
