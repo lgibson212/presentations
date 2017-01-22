@@ -22,7 +22,7 @@ class Dog:
 rufus = Dog()
 rufus.bark()
 
-rufus is an Object and bark is a Method, both within the Class "Dog". Such a method would not work on a "Cat" Class.
+# rufus is an Object and bark is a Method, both within the Class "Dog". Such a method would not work on a "Cat" Class.
 ```
 
 
