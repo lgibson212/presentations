@@ -1,66 +1,61 @@
 # presentations
 
-##Zip
+## Explain what the function does, provide at least one example of the use of the function and be prepared to present this topic on Monday.
 
-###Explain what the function does, provide at least one example of the use of the function and be prepared to present this topic on Monday.
-
-
-
-###What is a function? What is a method? What is the difference (if any) between a function and a method?
-
-* Short form: methods are associated with object instances or classes; functions aren't. When Python dispatches (calls) a method, then it binds the first parameter of that call to the appropriate object reference. (For most methods that's conventionally called self).
-
-* Methods are defined inside a class definition in order to make the relationship between the class and the method explicit.
-
-* All methods are functions but not all functions are methods.
-
-* The syntax for invoking a method is different from the syntax for calling a function.
+### .Zip
 
 
+## What is a function? What is a method? What is the difference (if any) between a function and a method?
 
-defined a class named Time and you wrote a function named printTime, which should have looked something like this:
+This hits at the heart of what Object Oriented Programming is. In an OOP language, programs are largely based around Classes and Objects, rather than Functions.
 
+A Class, such as "cell phone", can have many Objects, such as Apple iPhone7, Galaxy Note 7, Blackberry Curve and Google Pixel. A Class is like a template for an Object instance. The Class "cell phone" can have Attributes attached to an Object which store data, usually variables, such as keyboard type, mobile OS, camera pixels, and spontaneous flamability. The Class "cell phone" can also have Functions (procedures) attached to an Object which allow the Object to perform actions, such as create new contact, call mom, send txt, and take photo.
+
+A Method is a Function that is  stored/defined in a Class. This makes the relationship between Class and Method explicit. When OOP languages call a Method, it binds the first argument of the call to the appropriate Object reference within the Method's Class. All Methods are therefore Functions, but not all Functions are Methods. (Method = square, Function = rectangle)
+
+EX:
 ```
-class Time: 
-  pass 
+class Dog:
+    def bark(self):
+        print 'Woof woof!'
 
-def printTime(time): 
-  print str(time.hours) + ":" + \ 
-        str(time.minutes) + ":" + \ 
-        str(time.seconds) 
+rufus = Dog()
+rufus.bark()
 ```
+rufus is an Object and bark is a Method, both within the Class dog. Such a method would not work on a cat Class.
 
-To call this function, we passed a Time object as an argument:
 
->>> currentTime = Time() 
->>> currentTime.hours = 9 
->>> currentTime.minutes = 14 
->>> currentTime.seconds = 30 
->>> printTime(currentTime) 
+The syntax for invoking a Method is different from the syntax for calling a Function.
 
-To make printTime a method, all we have to do is move the function definition inside the class definition. Notice the change in indentation.
+A Method uses dot notation.
+Ex: my_string.upper() where upper is a Method within the Class string, and only works on string objects such as my_string.
 
-```
-class Time: 
-  def printTime(time): 
-    print str(time.hours) + ":" +  \ 
-          str(time.minutes) + ":" +  \ 
-          str(time.seconds) 
-```
+A function is a globally defined procedure that can call on anything.
+Ex: len(my_string) or len(my_list) where len is a function that returns the number of items in the given arguement and can work on different Classes (strings, lists, tupels, etc).
 
-Now we can invoke printTime using dot notation.
+Bonus: Parameters appear in definitions; arguments appear in calls.
 
->>> currentTime.printTime() 
 
-As usual, the object on which the method is invoked appears before the dot and the name of the method appears after the dot.
+The syntax for a Function call: print(my_string), suggests that the Function is the active agent. It says something like, "Hey print! Here's an object for you to print."
 
-The object on which the method is invoked is assigned to the first parameter, so in this case currentTime is assigned to the parameter time.
+In OOP, the Objects are the active agents. An invocation like console.log() says "Hey console! Please log yourself!"
+[[ my_string.upper() says "Hey my_string! Please uppercase yourself!" ]]
 
-By convention, the first parameter of a method is called self. The reason for this is a little convoluted, but it is based on a useful metaphor.
+This change in perspective might be more polite, but it is not obvious that it is useful. In the examples we have seen so far, it may not be. But sometimes shifting responsibility from the functions onto the objects makes it possible to write more versatile functions, and makes it easier to maintain and reuse code*.
 
-The syntax for a function call, printTime(currentTime), suggests that the function is the active agent. It says something like, "Hey printTime! Here's an object for you to print."
+Write DRY code: Don't Repeat Yourself. A principle of software development aimed at reducing repetition of information of all kinds.
 
-In object-oriented programming, the objects are the active agents. An invocation like currentTime.printTime() says "Hey currentTime! Please print yourself!"
 
-This change in perspective might be more polite, but it is not obvious that it is useful. In the examples we have seen so far, it may not be. But sometimes shifting responsibility from the functions onto the objects makes it possible to write more versatile functions, and makes it easier to maintain and reuse code.
+Referenced:
+
+* https://en.wikibooks.org/wiki/A-level_Computing_2009/AQA/Problem_Solving,_Programming,_Operating_Systems,_Databases_and_Networking/Programming_Concepts/Object-oriented_programming_(OOP)#Methods
+
+* http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap14.html
+
+* https://www.quora.com/Whats-the-difference-between-a-method-and-function-in-Python
+
+* http://stackoverflow.com/questions/28703834/why-do-some-methods-use-dot-notation-and-others-dont
+
+* https://docs.python.org/3.6
+
 
