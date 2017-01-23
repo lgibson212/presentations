@@ -2,7 +2,36 @@
 ## .zip
 ## Explain what the function does, provide at least one example of the use of the function and be prepared to present this topic on Monday.
 
+In Python 3 zip returns an iterator, use list or dict to see its content.
 
+An iterator is an object that implements *next*. next is expected to return the next element of the iterable object that returned it, and raise a StopIteration exception when no more elements are available.
+
+
+With zip we can act upon two lists at once. Zip() is a built-in function. We pass it sequences, like lists, and it enumerates them together.
+
+You can use zip with * to get transpose of a matrix:
+```
+>>> A = [[ 1, 2, 3],[ 4, 5, 6]]
+>>> zip(*A)
+[(1, 4), (2, 5), (3, 6)]
+>>> lis  = [[1,2,3], 
+... [4,5,6],
+... [7,8,9]]
+>>> zip(*lis)
+[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+If you want the returned list to be a list of lists:
+
+>>> [list(x) for x in zip(*lis)]
+[[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+#or
+>>> map(list, zip(*lis))
+[[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+```
+
+Referenced:
+* https://wiki.python.org/moin/Iterator
+* http://stackoverflow.com/questions/17037566/transpose-a-matrix-in-python
+* https://www.dotnetperls.com/zip-python
 
 
 ## What is a function? What is a method? What is the difference (if any) between a function and a method?
