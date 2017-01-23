@@ -13,14 +13,12 @@ In python 3 zip() returns an iterator^, use list() or dict() to see its content.
 If you want to get the list, call list() on the generator.
 
 ```python
-l = list(zip([1, 2, 3], [4, 5, 6]))
+list_tuple = list(zip([1, 2, 3], [4, 5, 6]))
 # However, this will give you a list of tuples:
-
-l
 [(1, 4), (2, 5), (3, 6)] 
-#If you want to get a list of lists, use a *list comprehension:*
 
-l = [list(x) for x in zip([1, 2, 3], [4, 5, 6])]  
+#If you want to get a list of lists, use a *list comprehension:*
+list_list = [list(x) for x in zip([1, 2, 3], [4, 5, 6])]  
 ```
 
 With zip we can act upon two lists at once. Zip() is a built-in function. We pass it sequences, like lists, and it enumerates them together- like the teeth in a Zipper. [zipper gif](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwintKivyNjRAhXCQyYKHRKfBf8QjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AZipper_animated.gif&psig=AFQjCNFnzbWL7w7AwaRO5aawYdD50564EQ&ust=1485271153649244)
@@ -33,13 +31,12 @@ matrix = [
     [7,8,9]
     ]
 
-list(zip(*matrix))
+transpose_tuple = list(zip(*matrix))
 [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 #again, this is a list of tuples
 
 #If you want the returned list to be a list of lists use list comprehension:
-
-[list(x) for x in zip(*matrix)]
+transpose_list = list(x) for x in zip(*matrix)
 [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 ```
 
