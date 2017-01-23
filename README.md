@@ -4,11 +4,11 @@
 
 In python 3 you nearly always get a generator^ object from operations such as zip or range.
 
-In Python 3 zip returns an iterator^, use list or dict to see its content.
+In python 3 zip() returns an iterator^, use list() or dict() to see its content.
 
-^Every generator is an iterator, but not vice versa. (An iterator is an iterable.) This produces less memory overhead, as no big iterable is created, holding all the needed values.
+...^Every generator is an iterator, but not vice versa. (An iterator is an iterable.) This produces less memory overhead, as no big iterable is created, holding all the needed values.
 
-An iterator is an object that implements *next*. next is expected to return the next element of the iterable object that returned it, and raise a StopIteration exception when no more elements are available.
+...An iterator is an object that implements *next*. next is expected to return the next element of the iterable object that returned it, and raise a StopIteration exception when no more elements are available.
 
 If you want to get the list, call list() on the generator.
 
@@ -20,27 +20,26 @@ l
 [(1, 4), (2, 5), (3, 6)] 
 #If you want to get a list of lists, use a *list comprehension:*
 
-l = [list(t) for t in zip([1, 2, 3], [4, 5, 6])] 
+l = [list(x) for x in zip([1, 2, 3], [4, 5, 6])]  
 ```
 
-With zip we can act upon two lists at once. Zip() is a built-in function. We pass it sequences, like lists, and it enumerates them together- like the teeth in a Zipper.
+With zip we can act upon two lists at once. Zip() is a built-in function. We pass it sequences, like lists, and it enumerates them together- like the teeth in a Zipper. [zipper gif](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwintKivyNjRAhXCQyYKHRKfBf8QjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AZipper_animated.gif&psig=AFQjCNFnzbWL7w7AwaRO5aawYdD50564EQ&ust=1485271153649244)
 
-You can use zip with * to get transpose of a matrix:
-```
->>> A = [[ 1, 2, 3],[ 4, 5, 6]]
->>> zip(*A)
-[(1, 4), (2, 5), (3, 6)]
->>> lis  = [[1,2,3], 
-... [4,5,6],
-... [7,8,9]]
->>> zip(*lis)
+You can use zip with * to transpose a matrix:
+```python
+matrix = [
+    [1,2,3], 
+    [4,5,6],
+    [7,8,9]
+    ]
+
+list(zip(*matrix))
 [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
-If you want the returned list to be a list of lists:
+#again, this is a list of tuples
 
->>> [list(x) for x in zip(*lis)]
-[[1, 4, 7], [2, 5, 8], [3, 6, 9]]
-#or
->>> map(list, zip(*lis))
+#If you want the returned list to be a list of lists use list comprehension:
+
+[list(x) for x in zip(*matrix)]
 [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 ```
 
