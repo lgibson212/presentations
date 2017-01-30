@@ -47,8 +47,8 @@ These functions are passed a lambda function as an argument as well as my_list.
 
 Lambda can also be used as a key:
 ```python
-sorted([1, 2, 3, 4, 5, 6, 7, 8, 9], key=lambda x: abs(5-x))
-[5, 4, 6, 3, 7, 2, 8, 1, 9]
+sorted([1, 7, 4, -2, 3], key=lambda x: abs(x))
+[1, -2, 3, 4, 7]
 ```
 
 References:
