@@ -6,3 +6,29 @@ http://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-exp
 
 
 # What is lambda? What does it do and why do we use it?
+lambda (function) = anonymous function, a function defined without a name.
+Normal functions are defined using the def keyword
+//Lambdas are meant to be a short or one time use function since you cannot call them again (they have no name to call them by)- they can only be called in line or within a higher order function.
+
+Syntax for writing a lambda function:
+**lambda arguments: expression**
+example of a lambda function to double:
+``` python
+lambda x: x * 2
+```
+
+Anonymous functions are generally used in **higher order functions**, functions that take in other functions as arguments. Ex: map() and filter().
+
+``` python
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+map_list = list(map(lambda x: x * 2 , my_list))
+# Output: [2, 10, 8, 12, 16, 22, 6, 24]
+
+filter_list = list(filter(lambda x: (x%2 == 0) , my_list))
+# Output: [4, 6, 8, 12]
+```
+These functions are passed a lambda function as an argument as well as my_list.
+
+https://www.programiz.com/python-programming/anonymous-function
+http://stackoverflow.com/questions/9342574/calling-anonymous-functions-in-python-without-assigning-them-to-a-variable
