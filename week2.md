@@ -1,33 +1,31 @@
 # What is an expression? What is a statement? What is the difference (if any) between the two?
-Statements are anything that make up stand alone line or lines of code.
+__Statements__ are anything that make up stand alone line or lines of code.
 
 Loops, ifs, and imports are examples of statements (compound, compound, and simple statements repsectively).
 
-Statements "Do something"
+**Statements "Do something"
 
-An expression is a statement that returns at least one value; it needs to be evaluated.
+An __expression__ is a statement that returns at least __one value__; it needs to be evaluated.
 
-Expressions "Evaluate something"
+**Expressions "Evaluate something"
 
 
-http://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python
-http://interactivepython.org/courselib/static/thinkcspy/SimplePythonData/StatementsandExpressions.html
+* http://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python
+* http://interactivepython.org/courselib/static/thinkcspy/SimplePythonData/StatementsandExpressions.html
 
 
 # What is lambda? What does it do and why do we use it?
 lambda (function) = anonymous function, a function defined without a name.
 
-Normal functions are defined using the def keyword
+Normal functions are defined using the **def** keyword
 
 Lambdas are meant to be a short or one time use function since you cannot call them again (they have no name to call them by)- they can 
 only be called in line or within a higher order function.
 
-(lambda x, y: x*y)(3, 5)
-15
 
 Syntax for writing a lambda function:
 **lambda arguments:*****expression***
-example of a lambda function to double:
+
 ``` python
 (lambda x, y: x*y)(3,5)
 15
@@ -52,5 +50,5 @@ sorted([1, 2, 3, 4, 5, 6, 7, 8, 9], key=lambda x: abs(5-x))
 [5, 4, 6, 3, 7, 2, 8, 1, 9]
 ```
 
-https://www.programiz.com/python-programming/anonymous-function
-http://stackoverflow.com/questions/9342574/calling-anonymous-functions-in-python-without-assigning-them-to-a-variable
+* https://www.programiz.com/python-programming/anonymous-function
+* http://stackoverflow.com/questions/9342574/calling-anonymous-functions-in-python-without-assigning-them-to-a-variable
