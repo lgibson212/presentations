@@ -1,14 +1,23 @@
 # What is an expression? What is a statement? What is the difference (if any) between the two?
 Statements are anything that make up stand alone line or lines of code.
-An expression is a statement that returns at least one value. 
+
+Loops, ifs, and imports are examples of statements (compound, compound, and simple statements repsectively).
+Statements "Do something"
+
+An expression is a statement that returns at least one value; it needs to be evaluated.
+Expressions "Evaluate something"
 
 http://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python
+http://interactivepython.org/courselib/static/thinkcspy/SimplePythonData/StatementsandExpressions.html
 
 
 # What is lambda? What does it do and why do we use it?
 lambda (function) = anonymous function, a function defined without a name.
+
 Normal functions are defined using the def keyword
-//Lambdas are meant to be a short or one time use function since you cannot call them again (they have no name to call them by)- they can only be called in line or within a higher order function.
+
+Lambdas are meant to be a short or one time use function since you cannot call them again (they have no name to call them by)- they can 
+only be called in line or within a higher order function.
 
 Syntax for writing a lambda function:
 **lambda arguments: expression**
