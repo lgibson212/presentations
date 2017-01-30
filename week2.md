@@ -1,11 +1,11 @@
 # What is an expression? What is a statement? What is the difference (if any) between the two?
-__Statements__ are anything that make up stand alone line or lines of code.
+<u>Statements</u> are anything that make up stand alone line or lines of code.
 
 Loops, ifs, and imports are examples of statements (compound, compound, and simple statements repsectively).
 
 **Statements "Do something"
 
-An __expression__ is a statement that returns at least __one value__; it needs to be evaluated.
+An <u>expression</u> is a statement that returns at least <u>one value</u>; it needs to be evaluated.
 
 **Expressions "Evaluate something"
 
