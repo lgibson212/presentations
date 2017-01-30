@@ -1,15 +1,16 @@
 # What is an expression? What is a statement? What is the difference (if any) between the two?
-<u>Statements</u> are anything that make up stand alone line or lines of code.
+*Statements* are anything that make up stand alone line or lines of code.
 
 Loops, ifs, and imports are examples of statements (compound, compound, and simple statements repsectively).
 
-**Statements "Do something"
+**Statements "Do something"**
 
-An <u>expression</u> is a statement that returns at least <u>one value</u>; it needs to be evaluated.
+An *expression* is a statement that returns at least *one value*; it needs to be evaluated.
 
-**Expressions "Evaluate something"
+**Expressions "Evaluate something"**
 
 
+References:
 * http://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python
 * http://interactivepython.org/courselib/static/thinkcspy/SimplePythonData/StatementsandExpressions.html
 
@@ -50,5 +51,6 @@ sorted([1, 2, 3, 4, 5, 6, 7, 8, 9], key=lambda x: abs(5-x))
 [5, 4, 6, 3, 7, 2, 8, 1, 9]
 ```
 
+References:
 * https://www.programiz.com/python-programming/anonymous-function
 * http://stackoverflow.com/questions/9342574/calling-anonymous-functions-in-python-without-assigning-them-to-a-variable
