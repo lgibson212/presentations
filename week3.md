@@ -10,7 +10,7 @@ Hashing is a technique to convert a range of key values into a range of indexes 
 
 This allows us to search for key values in constant, O(1), time. We simply use the hash function to compute the slot name for the item and then check the hash table to see if it is present. A constant amount of time is required to compute the hash value and then index the hash table at that location. If everything is where it should be, we have found a constant time search algorithm.
 
-However, due to collisions, instances where the hashing technique did not result in a unique location and wants to put an item in a location that is already occupied, a search for a location would take longer and depends on the probing method used. Some hashing techniques use a linear search function to find the next empty, some use chaining. Both would mean the search would take closer to O(n) time.
+However, due to collisions, instances where the hashing technique did not result in a unique location and wants to put an item in a location that is already occupied, a search for a location would take longer and depends on the probing method used. Some hashing techniques use a linear search function to find the next empty, some use chaining with linked lists. Both would mean the search would take closer to O(n) time. (Chaining can make it O(n) or O(log N) depending on the data structure used.)
 
 If the hash table does not have a fixed size but can shrink and grow as more keys are added and deleted, then every now and then the hash table needs to be resized, which takes a lot of time. So in those cases, insertion and deletion can sometimes take very long. This would be the worst case scenario. Although on average the time complexity is still O(1)- this is called amortized O(1).
  
@@ -26,6 +26,8 @@ Also does not take into account the hashing technique time- the function would m
 
 - https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm
 - http://interactivepython.org/runestone/static/pythonds/SortSearch/Hashing.html
+- https://www.quora.com/What-is-the-time-complexity-of-hash-table-O-1
+
 
 
 
