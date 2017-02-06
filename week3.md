@@ -25,10 +25,13 @@ Whenever an element is to be deleted, compute the hash code of the key passed an
 
 However, this does not take into account the hashing technique time- the function would most probably have a complexity of its own, but can be very simple.
 
+
+References:
 - https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm
 - http://interactivepython.org/runestone/static/pythonds/SortSearch/Hashing.html
 - https://www.quora.com/What-is-the-time-complexity-of-hash-table-O-1
 - http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/05/linear-probing.html
+- http://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete
 
 
 
