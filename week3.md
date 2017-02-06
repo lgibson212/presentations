@@ -35,4 +35,4 @@ However, this does not take into account the hashing technique time- the functio
 Question:
 Why is this faster than referring to an object by its direct memory location?
 
-Hash tables allow the program to Always store the data in the same exact location each time. Memory location changes when the program is called again. Hashing ensures that the data is always being stored in the same way every time.
+Hash tables allow the program to Always store the data in the same exact location each time. Memory location changes when the program is executed again. Hashing ensures that the data is always being stored in the same way every time.
