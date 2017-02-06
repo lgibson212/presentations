@@ -1,12 +1,13 @@
 # Explain and provide an example of the average case and worst case time complexity for insertion and deletion in a hash table.
 
-an associative array... a python dictionary is a hash table.
+an associative array...
+a hash table is a specific way to implement a python dictionary, can also implement sets.
 
-Key:Value pairs
+Key:Value pairs. Index Key : Data pairs.
 
-Thus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.
+A data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses a Hash Function to generate an index where an element is to be located from. You can then insert or delete the element.
 
-Hashing is a technique to convert a range of key values into a range of indexes of an array. (It usually involves a modulo function)
+Hashing is a technique to convert a range of key values into a range of indexes of an array.
 
 This allows us to search for key values in constant, O(1), time. We simply use the hash function to compute the slot name for the item and then check the hash table to see if it is present. A constant amount of time is required to compute the hash value and then index the hash table at that location. If everything is where it should be, we have found a constant time search algorithm.
 
@@ -22,16 +23,16 @@ Delete
 Whenever an element is to be deleted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing to get the element ahead if an element is not found at the computed hash code. When found, store a dummy item there to keep the performance of the hash table intact.
 
 
-Also does not take into account the hashing technique time- the function would most probably have a complexity of its own
+However, this does not take into account the hashing technique time- the function would most probably have a complexity of its own, but can be very simple.
 
 - https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm
 - http://interactivepython.org/runestone/static/pythonds/SortSearch/Hashing.html
 - https://www.quora.com/What-is-the-time-complexity-of-hash-table-O-1
+- http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/05/linear-probing.html
 
 
 
+Question:
+Why is this faster than referring to an object by its direct memory location?
 
-Question: Why is this faster than referring to an object by its direct memory location?
-Why bother hashing and putting it into a hash table?
-
-Memory Address as Hash in HashTable. Why can't HashTable use actual memory address of the Key as Hash?
+Hash tables allow the program to Always store the data in the same exact location each time. Memory location changes when the program is called again. Hashing ensures that the data is always being stored in the same way every time.
