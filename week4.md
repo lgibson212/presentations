@@ -8,7 +8,7 @@
 
 **Controller** messenger btwn model and view
 
-- *separates/isolates* the front end (what user sees) from the back end (what developer sees)
+- *separates/isolates* the different aspects of program's logic
 
 **Advantages**
 - decoupling would allow more *modular* use of the models section
