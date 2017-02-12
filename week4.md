@@ -20,7 +20,7 @@
 **Disadvantages**
 - decoupling can lead to the delay of updating laterally, updating one requires updating another
 - separation is too complicated for smaller applications with simpler solutions
- - inefficient data accessability, slow performance
+- inefficient data accessability, slow performance
  
 
 
