@@ -1,10 +1,13 @@
 # What are the advantages and disadvantages of using a MVC model?
-![mvc](https://i.stack.imgur.com/B19Ea.png)
 ![mvc](https://developer.chrome.com/static/images/mvc.png)
+![mvc](https://www.jeremymorgan.com/images/what-is-mvc-2.jpg)
 
 **Model** manages data
+
 **View** manages what is displayed to user
+
 **Controller** messenger btwn model and view
+
 - *separates/isolates* the front end (what user sees) from the back end (what developer sees)
 
 **Advantages**
@@ -12,12 +15,13 @@
 - simultaneous/parallel development of core logic and user-interface logic
 - structure makes it easy to maintain
 - more straight forward testing 
+- many frameworks based on MVC pattern
 
 **Disadvantages**
-- decoupling can lead to the delay of updating laterally - updating one requires updating another
-- separation is too complicated for smaller applications
-- not as relevant for web applications and modern UIs
- (developed in the 70s)
+- decoupling can lead to the delay of updating laterally, updating one requires updating another
+- separation is too complicated for smaller applications with simpler solutions
+ - inefficient data accessability, slow performance
+ 
 
 
 There are a few variations of the MVC design pattern such as MVP (Model–View–Presenter) and MVVP(Model–View–ViewModel). 
