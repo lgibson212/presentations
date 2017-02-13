@@ -24,7 +24,7 @@
  
 
 
-There are a few variations of the MVC design pattern such as MVP (Model–View–Presenter) and MVVP(Model–View–ViewModel). 
+There are a few variations of the MVC design pattern such as MVP (Model–View–Presenter) and MVVM(Model–View–ViewModel). 
 
 
 References:
