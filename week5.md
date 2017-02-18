@@ -6,23 +6,21 @@
 
 https://brew.sh/
 
-- package manager for macOS written in Ruby and uses Ruby scripts
+- package manager for macOS written in Ruby
+- uses Ruby scripts
+ - bottles are pre-built scripts with default options
 - by default installed into /usr/local 
 - update Homebrew by pulling an updated repository from Github
 - free, open source
 - written in 2009
 
 
-*Installing Packages with Homebrew.*
-
+Installing Packages with Homebrew:
 You can run Homebrew from the command line by using the brew command.
-Type brew install , followed by "formula name" of the UNIX package you want to install.
-
-The package manager builds software from source using "formulae", Ruby scripts constructed with Homebrew's DSL for managing dependencies, downloading source files, and configuring and compiling software. Binary packages called "bottles" provide pre-built formulae with default options.
+Type brew install , followed by the name of the UNIX package you want to install.
 
 
-
-*Other package managers:*
+**Other package managers:**
 - (Mac) App Store: Official app store for (macOS) iOS apps
 - Cydia: Frontend to a port of APT. Maintained by the jailbreak community.
 - Steam: A cross-platform video game distribution, licensing and social gameplay platform, developed and maintained by Valve. Used to shop for, download, install, update, uninstall and back up video games. Works on Windows NT, OS X and Linux.
