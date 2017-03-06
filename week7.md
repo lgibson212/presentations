@@ -36,3 +36,9 @@ During the response cycle, the Middleware classes are executed bottom-up
 
 
 ![midware](https://simpleisbetterthancomplex.com/media/2016-07-18-how-to-create-a-custom-django-middleware/middleware.svg)
+
+
+references
+- https://simpleisbetterthancomplex.com/tutorial/2016/07/18/how-to-create-a-custom-django-middleware.html
+- http://agiliq.com/blog/2015/07/understanding-django-middlewares/
+- 
