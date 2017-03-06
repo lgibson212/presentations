@@ -12,13 +12,12 @@ happens in the middle.
 ### Deafult middleware that comes in ```django-admin startproject```
 
 ```python 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -41,4 +40,4 @@ During the response cycle, the Middleware classes are executed bottom-up
 references
 - https://simpleisbetterthancomplex.com/tutorial/2016/07/18/how-to-create-a-custom-django-middleware.html
 - http://agiliq.com/blog/2015/07/understanding-django-middlewares/
-- 
+- https://docs.djangoproject.com/en/1.10/ref/middleware/
