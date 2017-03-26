@@ -5,9 +5,9 @@
 
 - imported from psycopg2.extras
 - a cursor that uses a real dict as the base type for rows
-  -allows access to column names as dict keys
+  - allows access to column names as dict keys
 - extremely specialized and does not allow the normal access (using integer indices) to fetched data
-  -If you need to access database rows both as a dictionary and a list, then use the generic DictCursor instead
+  - If you need to access database rows both as a dictionary and a list, then use the generic DictCursor instead
 - can be specified in the connection
 ``` python
 psycopg2.connect(cursor_factory=RealDictCursor)
