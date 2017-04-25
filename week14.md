@@ -11,7 +11,7 @@ A python script is first **compiled** to bytecode and then it is implemented (ex
 
 \* CPython is the original Python implementation. It is the implementation you download from Python.org. People call it CPython to distinguish it from other, later, Python implementations, and to distinguish the implementation of the language engine from the Python programming language itself. It is written in C.
 
-![Python Compilation and Interpretation](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj4rLC94L7TAhUGQCYKHeGvDM8QjRwIBw&url=http%3A%2F%2Faustincode.com%2Fcosc1336%2Fintroduction-to-python.php&psig=AFQjCNHQDGaWvu4YpHBIqAo3ACKtZCBiuQ&ust=1493179256936924)
+![Python Compilation and Interpretation](http://austincode.com/cosc1336/images/compilationinterpretation.PNG)
 
 
 ### Now back to GIL
