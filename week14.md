@@ -20,6 +20,9 @@ A python script is first **compiled** to bytecode and then it is implemented (ex
 - When a thread is running is must hold the GIL before it can safely access Python objects (which are stored in a heap stack)
 - Python can only run threads serially, never in parallel
 * Prevents multiprocessing power
+* Runnable threads compete with each other to acquire a GIL
+  - present an issue of priority inversion in case of multi threading
+  - new convoy effect in python 3.2  with I/O vs CPU threads
 
 ![Thread Execution Model](https://callhub.io/wp-content/uploads/2016/06/python-gil-visualization.png)
 
