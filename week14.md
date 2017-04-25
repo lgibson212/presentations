@@ -17,11 +17,11 @@ A python script is first **compiled** to bytecode and then it is implemented (ex
 ### Now back to GIL
 - CPython has a Global Interpreter Lock because python is not thread safe.
 - In order to support multi-threaded Python programs, there’s a global lock (GIL)
-- GIL must be held by the current thread before it can safely access Python objects
+- When a thread is running is must hold the GIL before it can safely access Python objects (which are stored in a heap stack)
 - Python can only run threads serially, never in parallel
 * Prevents multiprocessing power
 
-![Thread Execution Model](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjCrZLM4r7TAhUEbSYKHaNlBMAQjRwIBw&url=https%3A%2F%2Fwww.slideshare.net%2Femayssat%2Fpythonunderstanding-gil&psig=AFQjCNEENLUboYsoKRknxtnf-FuxWy7vtg&ust=1493180929522996)
+![Thread Execution Model](https://callhub.io/wp-content/uploads/2016/06/python-gil-visualization.png)
 
 #### heap stack
 - Memory management in Python involves a private heap containing all Python objects and data structures.
