@@ -2,20 +2,26 @@
 
 javascript is single threaded: two bits of script cannot run at the same time; they have to run one after another
 
-A promise is an object which can be returned synchronously from an asynchronous function. It will be in one of 3 possible states:
-Fulfilled: onFulfilled() will be called (e.g., resolve() was called)
-Rejected: onRejected() will be called (e.g., reject() was called)
-Pending: not yet fulfilled or rejected
+A promise is an object which can be returned synchronously from an asynchronous function. 
+
+It will be in one of 3 possible states:
+- Fulfilled: onFulfilled() will be called (e.g., resolve() was called)
+- Rejected: onRejected() will be called (e.g., reject() was called)
+- Pending: not yet fulfilled or rejected
 A promise is settled if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
+
+![states]9https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
+
 Once settled, a promise can not be resettled. Calling resolve() or reject() again will have no effect. The immutability of a settled promise is an important feature.
 
 If a promise has succeeded or failed and you later add a success/failure callback, the correct callback will be called, even though the event took place earlier.
 
 This is extremely useful for async success/failure, because you're less interested in the exact time something became available, and more interested in reacting to the outcome.
 
-pattern is pretty common when dealing with APIs: Multiple data fetches, then do something when it's all done
+Common when dealing with APIs: Multiple data fetches, then do something when it's all done.
 
 
+![timeline](https://cdn.tutsplus.com/net/uploads/2013/04/promise-validation-promise.png)
 
 
 
