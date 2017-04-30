@@ -6,15 +6,16 @@ Instead of immediately returning the final value, the asynchronous method return
 
 Promise constructor takes a function, that takes two parameters, resolve, and reject.
 
+will be in one of 3 possible states:
+![states](https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
+A promise is settled if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
+
 scotch.io tutrials code:
+
 https://jsbin.com/sisifofake/edit?js,console
 
 https://jsbin.com/rodelanawu/1/edit?js,console
 
-
-will be in one of 3 possible states:
-![states](https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
-A promise is settled if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
 
 Once settled, a promise cannot be resettled. Calling resolve() or reject() again will have no effect. The immutability of a settled promise is an important feature.
 
