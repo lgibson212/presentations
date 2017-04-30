@@ -1,19 +1,18 @@
 # What are JavaScript Promises?
 
-javascript is single threaded: two bits of script cannot run at the same time; they have to run one after another
+a Promise object represents an operation which has produced or will eventually produce a value. Promises provide a robust way to wrap the (possibly pending) result of asynchronous work, mitigating the problem of deeply nested callbacks (known as "callback hell").
 
-A Promise is an object which can be returned synchronously from an asynchronous function.
-
-Lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
-
-A better way/abstraction for writing callbacks and avoiding "callback hell" (nested callbacks in nested callbacks) in JS.
+Instead of immediately returning the final value, the asynchronous method returns a Promise to supply the value at some point in the future.
 
 Promise constructor takes a function, that takes two parameters, resolve, and reject.
+
+scotch.io tutrials code:
+https://jsbin.com/sisifofake/edit?js,console
 
 https://jsbin.com/rodelanawu/1/edit?js,console
 
 
-It will be in one of 3 possible states:
+will be in one of 3 possible states:
 ![states](https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
 A promise is settled if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
 
@@ -32,10 +31,12 @@ Anything that needs to wait for promise to proceed, you put that in .then.
 
 Because .then() always returns a new Promise, it’s possible to chain promises with precise control over how and where errors are handled. Promises allow you to mimic normal synchronous code’s try/catch behavior.
 
+
 ![timeline](https://cdn.tutsplus.com/net/uploads/2013/04/promise-validation-promise.png)
  
 
- 
+https://jsfiddle.net/api/mdn/
+
 https://jsfiddle.net/yz27rvay/
 
  
@@ -44,4 +45,4 @@ Referneces:
 - https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 - https://scotch.io/tutorials/javascript-promises-for-dummies
-- 
+- http://stackoverflow.com/documentation/javascript/231/promises#t=201704301901386431347
