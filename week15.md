@@ -10,7 +10,7 @@ It will be in one of 3 possible states:
 - Pending: not yet fulfilled or rejected
 A promise is settled if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
 
-![states]9https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
+![states](https://raw.githubusercontent.com/basarat/typescript-book/master/images/promise%20states%20and%20fates.png)
 
 Once settled, a promise can not be resettled. Calling resolve() or reject() again will have no effect. The immutability of a settled promise is an important feature.
 
